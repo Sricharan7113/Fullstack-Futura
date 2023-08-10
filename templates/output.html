@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ok Ok Bank</title>
+    <link rel="stylesheet" href="/static/open.css">
+    <link rel="icon" href="/static/Logo.png">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="box">
+            <h2>Lorem,ipsum.</h2>
+        </div>
+    </div> -->
+</body>
+
+</html>
+{% if prediction == '0' %}
+
+<div class="container container1">
+    <div class="box1">
+        <h1> The Customer is Elegible For Applying Credit Card! 👍</h1>
+    </div>
+    <form class="FormContainer" action="/Back" method="post">
+        <button class="btn" name="btn">Back</button>
+    </form>
+</div>
+
+{% else %}
+<div class="container2">
+    <div class="box2">
+        <h1> The Customer is Not Elegible For Applying Credit Card!</h1>
+    </div>
+    <form class="FormContainer" action="/Back" method="post">
+        <button class="btn" name="btn"> Back</button>
+    </form>
+</div>
+{% endif %}
